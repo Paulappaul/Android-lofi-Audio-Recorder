@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\alcin\\AndroidStudioProjects\\oboe\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\alcin\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\alcin\\AndroidStudioProjects\\oboe\\app\\.cxx\\Debug\\1mk6d6v9\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\alcin\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\alcin\\AndroidStudioProjects\\oboe\\app\\.cxx\\Debug\\1mk6d6v9\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "oboe::@6890427a1f51a3e7e1df": {
+      "artifactName": "oboe",
+      "abi": "x86",
+      "output": "C:\\Users\\alcin\\AndroidStudioProjects\\oboe\\app\\build\\intermediates\\cxx\\Debug\\1mk6d6v9\\obj\\x86\\liboboe.so",
+      "runtimeFiles": []
+    }
+  }
+}

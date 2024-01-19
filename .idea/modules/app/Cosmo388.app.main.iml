@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/Desktop/Convolution/FFTConvolver-non-uniform">
+      <sourceFolder url="file://$USER_HOME$/Desktop/Convolution/FFTConvolver-non-uniform" type="native-Source-root" />
+    </content>
+    <content url="file://$USER_HOME$/.gradle/caches/transforms-3/993aeec82d69b298a729f25ad63e1a15/transformed/oboe-1.8.0/prefab/modules/oboe/include">
+      <sourceFolder url="file://$USER_HOME$/.gradle/caches/transforms-3/993aeec82d69b298a729f25ad63e1a15/transformed/oboe-1.8.0/prefab/modules/oboe/include" type="native-header-root" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/cpp" type="native-Source-root" />
+    </content>
+  </component>
+</module>

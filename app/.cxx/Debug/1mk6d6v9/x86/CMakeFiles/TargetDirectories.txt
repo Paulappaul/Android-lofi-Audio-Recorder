@@ -1,0 +1,3 @@
+C:/Users/alcin/AndroidStudioProjects/oboe/app/.cxx/Debug/1mk6d6v9/x86/CMakeFiles/oboe.dir
+C:/Users/alcin/AndroidStudioProjects/oboe/app/.cxx/Debug/1mk6d6v9/x86/CMakeFiles/edit_cache.dir
+C:/Users/alcin/AndroidStudioProjects/oboe/app/.cxx/Debug/1mk6d6v9/x86/CMakeFiles/rebuild_cache.dir

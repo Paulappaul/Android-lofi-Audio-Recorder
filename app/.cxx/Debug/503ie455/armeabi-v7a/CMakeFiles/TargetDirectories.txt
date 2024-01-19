@@ -1,0 +1,3 @@
+C:/Users/alcin/AndroidStudioProjects/Cosmo388/app/.cxx/Debug/503ie455/armeabi-v7a/CMakeFiles/oboe-lib.dir
+C:/Users/alcin/AndroidStudioProjects/Cosmo388/app/.cxx/Debug/503ie455/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/alcin/AndroidStudioProjects/Cosmo388/app/.cxx/Debug/503ie455/armeabi-v7a/CMakeFiles/rebuild_cache.dir

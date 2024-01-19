@@ -1,0 +1,1 @@
+C:\Users\alcin\AndroidStudioProjects\Cosmo388\app\src\main\cpp\CMakeLists.txt
