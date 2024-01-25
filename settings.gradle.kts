@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
         // Add the following line if not present
         maven { url = uri ("https://dl.google.com/android/maven2") }
+        maven { url = uri ("https://jitpack.io") }
     }
 }
 
@@ -19,4 +20,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Cosmo388"
 include(":app")
- 

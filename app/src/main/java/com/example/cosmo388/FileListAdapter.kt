@@ -7,20 +7,37 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.oboe.R
+interface OnItemClickListener {
+    fun onItemClick(fileName: String)
+}
 
 data class FileName(val name: String)
 
-class FileListAdapter(private val fileNames: MutableList<FileName>) :
-    RecyclerView.Adapter<FileListAdapter.FileViewHolder>() {
+class FileListAdapter(
+    private val fileNames: MutableList<FileName>,
+    private val itemClickListener: OnItemClickListener
+) : RecyclerView.Adapter<FileListAdapter.FileViewHolder>() {
 
-    class FileViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    var selectedFileName: String? = null
+
+    class FileViewHolder(itemView: View, private val clickListener: OnItemClickListener) :
+        RecyclerView.ViewHolder(itemView), View.OnClickListener {
+
         val fileNameTextView: TextView = itemView.findViewById(R.id.tv_systemfile)
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            clickListener.onItemClick(fileNameTextView.text.toString())
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FileViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.menuadapter, parent, false)
-        return FileViewHolder(itemView)
+        return FileViewHolder(itemView, itemClickListener)
     }
 
     override fun onBindViewHolder(holder: FileViewHolder, position: Int) {
@@ -33,7 +50,7 @@ class FileListAdapter(private val fileNames: MutableList<FileName>) :
     }
 
     fun updateData(newFileNames: List<FileName>) {
-        Log.i("File list Adapter: ", "Updating data: $newFileNames")
+        selectedFileName = null // Clear selected file name when updating data
         fileNames.clear()
         fileNames.addAll(newFileNames)
         notifyDataSetChanged()

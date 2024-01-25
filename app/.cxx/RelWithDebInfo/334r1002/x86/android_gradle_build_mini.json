@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "C:\\Users\\alcin\\AndroidStudioProjects\\Cosmo388\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\alcin\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\alcin\\AndroidStudioProjects\\Cosmo388\\app\\.cxx\\RelWithDebInfo\\334r1002\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\alcin\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\alcin\\AndroidStudioProjects\\Cosmo388\\app\\.cxx\\RelWithDebInfo\\334r1002\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "oboe-lib::@6890427a1f51a3e7e1df": {
+      "artifactName": "oboe-lib",
+      "abi": "x86",
+      "output": "C:\\Users\\alcin\\AndroidStudioProjects\\Cosmo388\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\334r1002\\obj\\x86\\liboboe-lib.so",
+      "runtimeFiles": [
+        "C:\\Users\\alcin\\.gradle\\caches\\transforms-3\\993aeec82d69b298a729f25ad63e1a15\\transformed\\oboe-1.8.0\\prefab\\modules\\oboe\\libs\\android.x86\\liboboe.so"
+      ]
+    }
+  }
+}

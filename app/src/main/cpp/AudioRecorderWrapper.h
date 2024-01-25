@@ -33,7 +33,14 @@ Java_com_example_cosmo388_MainActivity_writeAudio(JNIEnv *env, jobject instance,
 
 JNIEXPORT void JNICALL
 Java_com_example_cosmo388_MainActivity_getIRPath(JNIEnv *env, jobject instance, jstring irPath, jlong recorderHandle);
+
+JNIEXPORT void JNICALL
+Java_com_example_cosmo388_MainActivity_setVolume(JNIEnv *env, jobject instance, jlong recorder_handle,
+                                                 jfloat volume, jint channel);
+
+
 }
+
 
 
 

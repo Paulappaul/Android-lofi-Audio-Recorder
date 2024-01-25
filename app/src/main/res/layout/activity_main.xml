@@ -7,32 +7,38 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/bt_StartButton"
+        android:id="@+id/bt_PlaybackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="340dp"
-        android:text="Start Record"
+        android:backgroundTint="#A6A3A3"
+        android:text="Start Playback"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/bt_stopButton"
+        android:id="@+id/bt_StartButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="340dp"
-        android:text="Stop"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="396dp"
+        android:backgroundTint="#A6A3A3"
+        android:text="Start Record"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/bt_PlaybackButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/bt_loadButton"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="264dp"
-        android:text="Start Playback"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="456dp"
+        android:backgroundTint="#A6A3A3"
+        android:text="Load"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -40,17 +46,32 @@
         android:id="@+id/bt_SaveRecording"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="340dp"
+        android:backgroundTint="#A6A3A3"
         android:text="Save Recording"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bt_stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="396dp"
+        android:backgroundTint="#A6A3A3"
+        android:text="Stop"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_systemMenu"
-        android:layout_width="364dp"
-        android:layout_height="298dp"
+        android:layout_width="356dp"
+        android:layout_height="204dp"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,30 +79,158 @@
 
     <com.google.android.material.slider.Slider
         android:id="@+id/slider_one"
-        android:layout_width="207dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="52dp"
         android:contentDescription="@string/this_is_a_decription"
         android:rotation="90"
         android:scaleX="1"
+        android:valueFrom="0.0"
+        android:valueTo="2.0"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="145dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="148dp"
-        android:rotation="89"
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_two"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/this_is_a_decription"
+        android:rotation="90"
+        android:scaleX="1"
+        android:valueFrom="0.0"
+        android:valueTo="2.0"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_three"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/this_is_a_decription"
+        android:rotation="90"
+        android:scaleX="1"
+        android:valueFrom="0.0"
+        android:valueTo="2.0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_four"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/this_is_a_decription"
+        android:rotation="90"
+        android:scaleX="1"
+        android:valueFrom="0.0"
+        android:valueTo="2.0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="268dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="268dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="268dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginBottom="268dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob_low1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="192dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob_low2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="192dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob_low3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="192dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob_low4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginBottom="192dp"
+        app:kNumberOfStates="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="356dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/intake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,9 @@
     <style name="Base.Theme.Oboe" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <item name="android:windowBackground">@android:color/holo_blue_light</item>
 
+
+    </style>
     <style name="Theme.Oboe" parent="Base.Theme.Oboe" />
 </resources>

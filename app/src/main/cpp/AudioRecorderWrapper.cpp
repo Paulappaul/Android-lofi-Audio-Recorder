@@ -63,4 +63,14 @@ JNIEXPORT void JNICALL
     }
 }
 
+JNIEXPORT void JNICALL
+Java_com_example_cosmo388_MainActivity_setVolume(JNIEnv *env, jobject instance, jlong recorder_handle,
+                                                 jfloat volume, jint Channel){
+
+    AudioRecorder *recorder = reinterpret_cast<AudioRecorder *>(recorder_handle);
+    recorder->setVolume(volume, Channel);
+
 }
+
+}
+

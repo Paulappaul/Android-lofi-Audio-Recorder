@@ -52,7 +52,14 @@ android {
     }
 }
 
+
+
+
+
+
 dependencies {
+
+    implementation ("com.github.BeppiMenozzi:Knob:1.9.0")
     implementation("com.google.android.material:material:1.11.0")
     implementation ("com.google.oboe:oboe:1.8.0")
     implementation("androidx.core:core-ktx:1.9.0")

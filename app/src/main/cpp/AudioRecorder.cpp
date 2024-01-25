@@ -34,6 +34,14 @@ enum streamState
     record
 };
 
+enum channel
+{
+    channel_one,
+    channel_two,
+    channel_three,
+    channel_four
+};
+
 class AudioRecorder : public oboe::AudioStreamCallback{
 public:
 
@@ -339,6 +347,30 @@ public:
         // Add any necessary cleanup logic
     }
 
+    void setVolume(float newVolume, int channel )
+    {
+        LOGI("Channel chosen: %d", channel);
+
+        switch (channel) {
+            case 1:
+                channel1_volume = newVolume;
+                break;
+            case 2:
+                channel2_volume = newVolume;
+                break;
+            case 3:
+                channel3_volume = newVolume;
+                break;
+            case 4:
+                channel4_volume = newVolume;
+                break;
+            default:
+                LOGI("No Channel Chosen");
+                break;
+        }
+    }
+
+
 private:
     streamState StreamState;
     std::vector<float> audioDataBuffer;
@@ -349,6 +381,10 @@ private:
     std::string irPath;
     const double pi = 3.14159265358979323846;
     std::string finalPath;
+    float channel1_volume = 0.0f;
+    float channel2_volume = 0.0f;
+    float channel3_volume = 0.0f;
+    float channel4_volume = 0.0f;
 
 
     void streamIntializer()
@@ -406,7 +442,7 @@ private:
         {
             float *floatData = static_cast<float *>(audioData);
             auto bufferSize = std::min(static_cast<size_t>(numFrames), audioDataBuffer.size());
-            std::copy(audioDataBuffer.begin(), audioDataBuffer.begin() + bufferSize, floatData);
+            std::copy(audioDataBuffer.begin(), audioDataBuffer.begin() + bufferSize, floatData); //add floatData * chanel_volume1 to implement slider?
         }
         else if (StreamState == record)
         {

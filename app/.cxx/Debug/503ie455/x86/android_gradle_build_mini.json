@@ -22,7 +22,7 @@
       "abi": "x86",
       "output": "C:\\Users\\alcin\\AndroidStudioProjects\\Cosmo388\\app\\build\\intermediates\\cxx\\Debug\\503ie455\\obj\\x86\\liboboe-lib.so",
       "runtimeFiles": [
-        "C:\\Users\\alcin\\.gradle\\caches\\transforms-3\\993aeec82d69b298a729f25ad63e1a15\\transformed\\oboe-1.8.0\\prefab\\modules\\oboe\\libs\\android.x86\\liboboe.so"
+        "C:\\Users\\alcin\\.gradle\\caches\\transforms-3\\8799c28099357b0a170005fc9173f5b9\\transformed\\jetified-oboe-1.8.0\\prefab\\modules\\oboe\\libs\\android.x86\\liboboe.so"
       ]
     }
   }

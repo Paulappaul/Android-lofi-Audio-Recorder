@@ -2,6 +2,6 @@
   "enabled": true,
   "prefabPath": "C:\\Users\\alcin\\.gradle\\caches\\modules-2\\files-2.1\\com.google.prefab\\cli\\2.0.0\\f2702b5ca13df54e3ca92f29d6b403fb6285d8df\\cli-2.0.0-all.jar",
   "packages": [
-    "C:\\Users\\alcin\\.gradle\\caches\\transforms-3\\993aeec82d69b298a729f25ad63e1a15\\transformed\\oboe-1.8.0\\prefab"
+    "C:\\Users\\alcin\\.gradle\\caches\\transforms-3\\8799c28099357b0a170005fc9173f5b9\\transformed\\jetified-oboe-1.8.0\\prefab"
   ]
 }
